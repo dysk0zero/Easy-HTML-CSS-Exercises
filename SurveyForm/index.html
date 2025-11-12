@@ -7,28 +7,33 @@
   </head>
   <body>
     <header>
-      <h1>Brief Form &mdash; Roldan Studio</h1>
-      <p>
+      <h1 id="title" >Brief Form &mdash; Roldan Studio</h1>
+      <p id="description" >
         Let's understand your business and objectives and define the project
         goals together.
       </p>
     </header>
     <main>
-      <form>
+      <form id="survey-form">
         <div class="formWrapper">
-          <label>Company</label>
-          <input />
+          <label for="name">Company</label>
+          <input id="name" name="name" type="text" required />
         </div>
         <div class="formWrapper">
-          <label>Email</label>
-          <input />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
         </div>
         <div class="formWrapper">
-          <p>In which web design service are you interested?</p>
-          <select></select>
+          <label for="service">In which web design service are you interested?</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="1">Static Site</option>
+            <option value="2">Dynamic Site</option>
+            <option value="3">Web App</option>
+          </select>
         </div>
         <div class="formWrapper">
-          <p>Describe in a few words your business/organization: </p>
+          <p>Describe in a few words your business/organization </p>
           <input />
         </div>
       </form>
