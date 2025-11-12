@@ -16,16 +16,20 @@
     <main>
       <form id="survey-form">
         <div class="formWrapper">
-          <label for="name">Company</label>
-          <input id="name" name="name" type="text" required />
+          <label for="name" id="name-label">Company</label>
+          <input id="name" name="name" type="text" placeholder="Company Name" required />
         </div>
         <div class="formWrapper">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+          <label for="email" id="email-label">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required />
         </div>
         <div class="formWrapper">
-          <label for="service">In which web design service are you interested?</label>
-          <select id="service" name="service">
+          <label for="text" id="text-label">Describe in a few words your business/organization </label>
+          <textarea id="text" name="text" rows="3" cols="30" placeholder="Describe your business" ></textarea>
+        </div>
+        <div class="formWrapper">
+          <label for="dropdown" id="service-label">In which web design service are you interested?</label>
+          <select id="dropdown" name="service">
             <option value="">Select a service</option>
             <option value="1">Static Site</option>
             <option value="2">Dynamic Site</option>
@@ -33,8 +37,11 @@
           </select>
         </div>
         <div class="formWrapper">
-          <p>Describe in a few words your business/organization </p>
-          <input />
+          <label for="number" id="number-label">What is your budget? (In Euros)</label>
+          <input id="number" type="number" name="budget" min="1500" max="10000" placeholder="Budget" />
+        </div>
+        <div class="formWrapper">
+          <label for="features" id="features-label">Select the features you want to include in your website</label>
         </div>
       </form>
     </main>
