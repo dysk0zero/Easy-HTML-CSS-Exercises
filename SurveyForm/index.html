@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Roldan Studio Brief Form</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1 id="title" >Brief Form &mdash; Roldan Studio</h1>
-      <p id="description" >
-        Let's understand your business and objectives and define the project
-        goals together.
-      </p>
-    </header>
-    <main>
-      <form id="survey-form">
-        <div class="formWrapper">
-          <label for="name" id="name-label">Company</label>
-          <input id="name" name="name" type="text" placeholder="Company Name" required />
-        </div>
-        <div class="formWrapper">
-          <label for="email" id="email-label">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" required />
-        </div>
-        <div class="formWrapper">
-          <label for="text" id="text-label">Describe in a few words your business/organization </label>
-          <textarea id="text" name="text" rows="3" cols="30" placeholder="Describe your business" ></textarea>
-        </div>
-        <div class="formWrapper">
-          <label for="dropdown" id="service-label">In which web design service are you interested?</label>
-          <select id="dropdown" name="service">
-            <option value="">Select a service</option>
-            <option value="1">Static Site</option>
-            <option value="2">Dynamic Site</option>
-            <option value="3">Web App</option>
-          </select>
-        </div>
-        <div class="formWrapper">
-          <label for="number" id="number-label">What is your budget? (In Euros)</label>
-          <input id="number" type="number" name="budget" min="1500" max="10000" placeholder="Budget" />
-        </div>
-        <div class="formWrapper">
-          <label for="features" id="features-label">Select the features you want to include in your website</label>
-        </div>
-      </form>
-    </main>
-  </body>
+
+<head>
+  <title>Roldan Studio Brief Form</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Brief Form &mdash; Roldan Studio</h1>
+    <p id="description">
+      Let's understand your business and objectives and define the project
+      goals together.
+    </p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="formWrapper">
+        <label for="name" id="name-label">Company</label>
+        <input id="name" name="name" type="text" placeholder="Company Name" required />
+      </div>
+      <div class="formWrapper">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required />
+      </div>
+      <div class="formWrapper">
+        <label for="text" id="text-label">Describe in a few words your business/organization: </label>
+        <textarea id="text" name="text" rows="3" cols="30" placeholder="Describe your business"></textarea>
+      </div>
+      <div class="formWrapper">
+        <label for="dropdown" id="service-label">In which web design service are you interested?</label>
+        <select id="dropdown" name="service">
+          <option disabled="" selected="" value="">Select a service</option>
+          <option value="static">Static Site</option>
+          <option value="dynamic">Dynamic Site</option>
+          <option value="web-app">Web App</option>
+        </select>
+      </div>
+      <div class="formWrapper">
+        <label for="number" id="number-label">What is your budget? (In Euros)</label>
+        <input id="number" type="number" name="budget" min="1500" max="10000" placeholder="Budget" />
+      </div>
+      <div class="formWrapper">
+        <p id="features-label">Select extra features for your website:</p>
+        <label class="checkbox-card">
+          <input type="checkbox" name="features" value="booking" class="checkbox" />Booking System
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="features" value="ecommerce" class="checkbox" />Sell products
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="features" value="database" class="checkbox" />Organized content or data
+        </label>
+        <label class="checkbox-card">
+          <input type="checkbox" name="features" value="membership" class="checkbox" />Blog
+        </label>
+      </div>
+      <div class="formWrapper">
+        <p id="development-label">Choose your development stack:</p>
+        <label class="radio-card">
+          <input type="radio" name="development" value="webflow" class="radio" checked />Webflow
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="development" value="code" class="radio" />Full Code
+        </label>
+      </div>
+      <div class="formWrapper">
+        <label for="message" id="message">Describe your project inquiry on detail: </label>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Tell me a bit about your project..."></textarea>
+      </div>
+      <div class="formWrapper">
+        <button type="submit" id="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
 </html>
